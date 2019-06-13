@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = [7, 12, 6, 9, 20, 56, 89,3, 5, 1, 8,];
+    let taoHam = ham(mang);
+    function ham(mang) {
+        if(mang.length === 0){
+            return -1;
+        }
+        let min = mang[0];
+        for(let i=0;i<mang.length;i++){
+            if (mang[i] < min) {
+                min = mang[i];
+            }
+        }return min;
+    }
+    alert(taoHam)
+</script>
+</body>
+</html>
